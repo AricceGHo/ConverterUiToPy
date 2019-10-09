@@ -2,14 +2,13 @@
 import os
 import sys
 from PyQt5 import QtWidgets
-import ConverterUbuntuUI
+import ConverterUI
 import json
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QWidget, QCheckBox, QApplication
-from PyQt5.QtCore import Qt
+from PyQt5 import QtCore, QtWidgets
 
 
-class ExampleApp(QtWidgets.QMainWindow, ConverterUbuntuUI.Ui_Form):
+class ExampleApp(QtWidgets.QMainWindow, ConverterUI.Ui_Form):
 
     def button_click_open(self):
         filters = "User Interface (*.ui)"
